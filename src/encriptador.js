@@ -46,3 +46,13 @@ function encriptar(traduccion){
     return;
 
 }
+
+
+
+
+const enc = document.querySelector('#enc');
+
+
+var traduccion = {"a": "ai", "e": "enter", "i": "imes", "o": "ober", "u": "ufat"};
+
+enc.addEventListener( 'click', function() {encriptar(traduccion);} );
