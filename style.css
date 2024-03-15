@@ -66,3 +66,92 @@ main{
     
     animation: fade_in var(--time);
 }
+
+.escribir > textarea:focus{
+    outline: none
+}
+
+.escribir > textarea::-webkit-input-placeholder {
+    color: #0A3871;
+}
+
+.escribir-info{
+    width: 100%;
+    margin-bottom: 72px;
+    position: relative;
+    animation: slide_info var(--time);
+}
+
+@keyframes slide_info {
+    0%{
+        left: -1400px;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+
+.info{
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+}
+
+.info > p{
+    margin-left: 8px;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 18px;
+    color: #495057;
+}
+
+.info > img{
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+    display: inline-block;
+}
+
+.botones{
+    display: flex;
+    width: 100%;
+}
+
+.botones > input{
+    flex-basis: 50%;
+    height: 67px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    transform: scale(1);
+    transition: transform 0.2s; 
+}
+
+.botones > input:hover{
+    transform: scale(1.05);
+}
+
+.botones > input:first-child{
+    margin-right: 12px;
+    background-color:#0A3871;
+    color: #FFF;
+}
+
+.botones > input:first-child:active{
+    background-color: #000;
+}
+
+.botones > input:last-child{
+    margin-left: 12px;
+    background-color:#D8DFE8;
+    color: #0A3871;
+}
+
+.botones > input:last-child:active{
+    color: #FFF;
+    background-color: #000;
+}
