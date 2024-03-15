@@ -20,7 +20,40 @@
         </div>
     </header>
     <main>
-        
+        <div class="contenedor">
+            <div class="encriptador">
+                <form class="encriptador-escribir">
+                    <div class="escribir">
+                        <textarea name="text_in_area" id="texto" placeholder="Ingrese el texto aqui" required></textarea>
+                        <div class="escribir-info">
+                            <div class="info">
+                                
+                                <p id="warning">Solo letras minúsculas y sin acentos</p>
+                            </div>
+                            <div class="botones">
+                                <input id="enc" type="button" value="Encriptar">
+                                <input id="des" type="button" value="Desencriptar">
+                            </div> 
+                        </div>
+                    </div>
+                </form>
+
+                <div class="desenc">
+                    <div class="desenc-content">
+                        <div class="content" id="default">
+                            <div class="imagenDer">
+                                <img src="imagenes/muneco.svg" alt="Imagen de animada">
+                            </div><p>Ningún mensaje fue encontrado</p>
+                            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                        </div>
+                        <div class = "content invisible" id="result">
+                            <textarea name="text_out_area" id="texto_out" disabled></textarea>
+                            <button id="copiar">Copiar</button>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
     </main>
 
     
