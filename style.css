@@ -29,3 +29,40 @@ body{
     height: 48px;
     animation: rotacion var(--time);
 }
+
+main{
+    height: 100%;
+}
+
+.encriptador{
+    margin: 0 40px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.encriptador-escribir{
+    flex-basis: calc(65% - 80px);
+}
+
+.escribir{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.escribir > textarea{
+    flex-basis: 100%;
+    margin-top: 168px;
+    font-family: Inter, sans-serif;
+    font-size: 32px;
+    line-height: 48px;
+    color:#0A3871;
+    background-color: transparent;
+    resize: none;
+    border: none;
+    
+    animation: fade_in var(--time);
+}
